@@ -1,0 +1,22 @@
+<div class="col-lg-12" style="text-align: center">
+    <h1>Importar dados de repositório.</h1>
+    <h4>Para importar os dados do repositório, informe abaixo o repositório no formato "owner/repositório", e clique em "Importar"</h4>
+
+    <form id="frm" name="frmNewTicket" method="get" action="javascript:importCommits()">
+        <div class="form-group">
+            <div class="col-lg-11">
+                <input type="text" class="form-control" id="repository" name="repository" placeholder="Digite aqui o repositório no formato 'owner/repo'">
+            </div>
+            <div class="col-lg-1">
+                <button type="submit" class="btn btn-success">Importar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="col-lg-12">
+    <div class="loading hide" id="loading"></div>
+    <div class="alert alert-danger hide" id="error-message"></div>
+    <div class="alert alert-success hide" id="success-message"></div>
+</div>
+

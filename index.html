@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>eConciliador Test</title>
+        <link rel="stylesheet" href="public/css/app.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script src="public/js/functions.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                loadView('home');
+            });
+        </script>
+    </head>
+    <body>
+        <footer class="app-footer">
+            eConciliador Test &copy;2018 Jorge Modesto - Todos os direitos reservados
+        </footer>
+        <div id="app">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="nav navbar-nav">
+                            &nbsp;
+                        </ul>
+
+                        <!-- Right Side Of Navbar -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    Menu <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="javascript:loadView('import_repositories')">Importar Repositório</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:loadView('commits_report')">Relat&oacute;rio de Commits</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div id="content" class="row"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
