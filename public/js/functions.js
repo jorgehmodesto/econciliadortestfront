@@ -21,7 +21,7 @@ function importCommits() {
         var owner = aRepository[0];
         var repo = aRepository[1];
 
-        $.getJSON('http://econciliadorapitest.local/api/import/owner/' + owner + '/repo/' + repo, {}, function(r){
+        $.getJSON('http://econciliadortestapi.jorgemodesto.com.br/api/import/owner/' + owner + '/repo/' + repo, {}, function(r){
             $('#loading').addClass('hide');
             if(r.success == true) {
                 $('#success-message').html("Histórico de commits importado com sucesso. Acesse o <a href='javascript:loadView(\"commits_report\")'>relatório</a> para consultar os dados");
@@ -53,7 +53,7 @@ function commitsReport()
         var owner = aRepository[0];
         var repo = aRepository[1];
 
-        $.getJSON('http://econciliadorapitest.local/api/export/owner/' + owner + '/repo/' + repo, {}, function(r){
+        $.getJSON('http://econciliadortestapi.jorgemodesto.com.br/api/export/owner/' + owner + '/repo/' + repo, {}, function(r){
             $('#loading').addClass('hide');
 
             if(r.success === true) {
